@@ -5,6 +5,9 @@
 
 <body>
     <script>
+
+        //在ES6中建议定义变量用 const 和 let ,尽量少用 var
+        //因为var 的作用域是全局，会修改其他人定义的变量值
         const age = 2;
 
         console.log(age);
@@ -15,6 +18,7 @@
           return a;
       }
 
+      //函数调用
       price(1);
 
       const Person = function(name, age)
@@ -25,20 +29,22 @@
 
         const wuge = new Person('wuage', 23);
 
+      //变量与字符串组合 输出
       const wu = 21;
       const userinfo = `${wu}age`;
       console.log(userinfo);
 
 
-      //const template = `<div>${wu}</div>`;
-      //document.body.innerHTML = template;
+      const template = `<div>${wu}</div>`;
+      document.body.innerHTML = template;
 
-      //const [name2, age2] = wuge;
+      //结构数组，将数组的元素结构到变量中
+      const user = ['joven','manser'];
+      const [user1, user2] = user;
+      console.log(user1);
 
+      //用 for of 遍历数组
       const fruits = ['apple','banana','orange'];
-
-      console.log(fruits);
-
       for(let fruit of fruits)
       {
           console.log(fruit);
@@ -56,12 +62,17 @@
       {
           console.log(value);
       }
+      */
 
-*/
+      //扩展运算符，遍历数组
+      const newFruits = [...fruits];
 
-
-
+      console.log(newFruits);
 
     </script>
+
+
+    <script src="app.js"></script>
+
 </body>
 </html>
