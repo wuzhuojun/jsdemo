@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <script>
+        const age = 2;
+
+        console.log(age);
+
+
+      function price(a) {
+          console.log(a);
+          return a;
+      }
+
+      price(1);
+
+      const Person = function(name, age)
+        {
+            this.name = 'hello';
+            this.age = 21;
+        }
+
+        const wuge = new Person('wuage', 23);
+
+      const wu = 21;
+      const userinfo = `${wu}age`;
+      console.log(userinfo);
+
+
+      //const template = `<div>${wu}</div>`;
+      //document.body.innerHTML = template;
+
+      //const [name2, age2] = wuge;
+
+      const fruits = ['apple','banana','orange'];
+
+      console.log(fruits);
+
+      for(let fruit of fruits)
+      {
+          console.log(fruit);
+      }
+
+      console.log('for in');
+      for(let index in wuge)
+      {
+          console.log(wuge[index]);
+      }
+
+      /*
+      for in 不支持对象的遍历，只支持数组的遍历
+      for(let value of wuge)
+      {
+          console.log(value);
+      }
+
+*/
+
+
+
+
+    </script>
+</body>
+</html>
