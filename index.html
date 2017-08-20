@@ -69,10 +69,66 @@
 
       console.log(newFruits);
 
+      //set 的使用
+        console.log('set demo');
+        const colors = new Set();
+        colors.add('red');
+        colors.add('green');
+        colors.add('blue');
+
+        colors.delete('blue');
+        for(let color of colors)
+        {
+            console.log(color);
+        }
+
+        console.log(colors.has('red'));
+
+      //map使用
+        console.log('map demo');
+        const people = new Map();
+        people.set('wuage', 23);
+        people.set('haha',24);
+
+        for(let person of people)
+        {
+            console.log(person);
+        }
+
     </script>
 
 
-    <script src="./dist/bundle.js"></script>
 
+    <script src="./dist/bundle.js">
+        //尝试模块化
+    </script>
+
+
+    <script>
+        //类的使用
+        class User {
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+            info(){
+                console.log('hi');
+            }
+
+            static desc()
+            {
+                console.log('static fun');
+            }
+        }
+
+        const wuage = new User('wuage', 24);
+
+        wuage.info();
+
+        User.desc();
+
+
+    </script>
 </body>
 </html>

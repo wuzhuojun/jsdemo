@@ -1,3 +1,3 @@
-import username from './config.js'
+import userexport from './config.js'
 
-console.log(username);
+console.log(userexport);
